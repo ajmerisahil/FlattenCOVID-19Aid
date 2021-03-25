@@ -1,0 +1,63 @@
+{% extends 'shop/basic.html' %}
+{% load static %}
+{% block title %} COMING SOON {% endblock %}
+
+{% block body %}
+
+<!-- Section -->
+<div class="coming_soon_area" style="padding-bottom:50px; ">
+<div class="overlay_bg" style="background: url({% static 'shop/images/coming_soon_map_bg.png' %});background-position: center 0;"></div>
+<div class="container">
+<div class="coming_soon_content text-center">
+<div id="clockdiv" class="clock" data-date="2021-05-06"><div class="timer days"><span class="days days-bottom">42</span><div class="smalltext days-top">Days</div></div><div class="timer hours"><span class="hours hours-bottom">14</span><div class="smalltext hours-top">Hours</div></div><div class="timer minutes"><span class="minutes minutes-bottom">42</span><div class="smalltext minutes-top">Minutes</div></div><div class="timer seconds"><span class="seconds seconds-bottom">43</span><div class="smalltext seconds-top">Seconds</div></div></div>
+<h6>Stay tuned, we’re coming soon</h6>
+<h2>Before launching our new website</h2>
+<p>We're working so hard to give you the hottest updates, knowledge base
+and information about the coronavirus.
+</p>
+<h5>We'll let you know when we start</h5>
+<form action="#" class="mail_box">
+<div class="input-group">
+<input type="text" class="form-control" placeholder=" Enter your email" aria-label="Recipient's username" aria-describedby="button-addon2">
+<div class="input-group-append">
+<button class="btn btn-outline-secondary" type="button" id="button-addon2">
+<i class="linearicons-arrow-right"></i>
+</button>
+</div>
+</div>
+</form>
+<div class="footer_copyright coming_soon_footer">
+<ul class="nav">
+<li>
+<a href="#"><i class="fab fa-facebook"></i></a>
+</li>
+<li>
+<a href="#"><i class="fab fa-twitter"></i></a>
+</li>
+<li>
+<a href="#"><i class="fab fa-instagram"></i></a>
+</li>
+<li>
+<a href="#"><i class="fab fa-youtube"></i></a>
+</li>
+<li>
+<a href="#"><i class="fab fa-vimeo-v"></i></a>
+</li>
+</ul>
+<p>© Copyright
+<script>
+                                document.write(new Date().getFullYear());
+                            </script> Flatten COVID-19 Aid
+</p>
+<h6>
+Designed with <i class="linearicons-heart"></i>
+by <span> Sahil | Mihir | Deep</span>
+</h6>
+</div>
+</div>
+</div>
+</div>
+<!-- Section Ends-->
+
+
+{% endblock %}

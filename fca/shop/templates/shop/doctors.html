@@ -1,0 +1,204 @@
+{% extends 'shop/basic.html' %}
+{% load static %}
+{% block title %} DOCTORS {% endblock %}
+
+{% block body %}
+
+<!-- Section 1 -->
+<section class="breadcrumb_area boi_breadcrumb">
+<div class="container">
+<div class="breadcrumb_text">
+<h6>Meet the Experts</h6>
+<h3>Our Doctors</h3>
+<ul class="nav justify-content-center">
+<li><a href="{% url 'ShopHome' %}">Home</a></li>
+<li><a href="{% url 'ShopAbout' %}">About</a></li>
+<li><a href="{% url 'ShopDoctors' %}">Our Doctors</a></li>
+</ul>
+</div>
+<div class="doctors_bio row">
+<div class="col-lg-6">
+<div class="doctors_img text-right wow fadeInUp" data-wow-delay="400ms" style="visibility: visible;"><img src="{% static 'shop/images/doctors/doctors-img.png' %}" alt="">
+</div>
+</div>
+<div class="col-lg-6">
+<div class="doctors_bio_text text-left wow fadeInUp" data-wow-delay="400ms" style="visibility: visible;">
+<h5>Founder and Owner</h5>
+<h3>Dr Pamela Smith</h3>
+<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
+quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum
+necessitatibus.</p>
+<img src="{% static 'shop/images/doctors/signature.png' %}" alt="">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 1 Ends -->
+
+
+<!-- Section 2 -->
+<section class="doctors_area">
+<div class="container">
+<div class="row doctors_inner">
+<div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="400ms" style="visibility: visible;">
+<div class="doctors_item">
+<div class="doctors_img">
+<img class="img-fluid" src="{% static 'shop/images/doctors/doctors-1.png' %}" alt="">
+</div>
+<div class="doctors_text">
+<h6>Rehabilitation therapist</h6>
+<h3>Dr Taylor Hawk</h3>
+<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+</p>
+<ul class="nav">
+<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="500ms" style="visibility: visible;">
+<div class="doctors_item">
+<div class="doctors_img">
+<img class="img-fluid" src="{% static 'shop/images/doctors/doctors-2.png' %}" alt="">
+</div>
+<div class="doctors_text">
+<h6>Rehabilitation therapist</h6>
+<h3>Dr Taylor Hawk</h3>
+ <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+</p>
+<ul class="nav">
+<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="600ms" style="visibility: visible;">
+<div class="doctors_item">
+<div class="doctors_img">
+<img class="img-fluid" src="{% static 'shop/images/doctors/doctors-3.png' %}" alt="">
+</div>
+<div class="doctors_text">
+<h6>Rehabilitation therapist</h6>
+<h3>Dr Taylor Hawk</h3>
+<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+</p>
+<ul class="nav">
+<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="700ms" style="visibility: visible;">
+<div class="doctors_item">
+<div class="doctors_img">
+<img class="img-fluid" src="{% static 'shop/images/doctors/doctors-4.png' %}" alt="">
+</div>
+<div class="doctors_text">
+<h6>Rehabilitation therapist</h6>
+<h3>Dr Taylor Hawk</h3>
+<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+</p>
+<ul class="nav">
+<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2 Ends -->
+
+
+<!-- Section 3 -->
+<section class="client_logo_area pad_top">
+<div class="container">
+<div class="client_slider slick-initialized slick-slider">
+<div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 4290px; transform: translate3d(-1320px, 0px, 0px);"><div class="item slick-slide slick-cloned" style="width: 165px;" tabindex="-1" data-slick-index="-2" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-5.png' %}" alt="">
+</div><div class="item slick-slide slick-cloned" style="width: 165px;" tabindex="-1" data-slick-index="-1" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-6.png' %}" alt="">
+</div><div class="item slick-slide" style="width: 165px;" tabindex="-1" data-slick-index="0" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-1.png' %}" alt="">
+</div><div class="item slick-slide" style="width: 165px;" tabindex="-1" data-slick-index="1" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-2.png' %}" alt="">
+</div><div class="item slick-slide" style="width: 165px;" tabindex="-1" data-slick-index="2" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-3.png' %}" alt="">
+</div><div class="item slick-slide" style="width: 165px;" tabindex="-1" data-slick-index="3" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-4.png' %}" alt="">
+</div><div class="item slick-slide" style="width: 165px;" tabindex="-1" data-slick-index="4" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-5.png' %}" alt="">
+</div><div class="item slick-slide" style="width: 165px;" tabindex="-1" data-slick-index="5" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-6.png' %}" alt="">
+</div><div class="item slick-slide slick-current slick-active" style="width: 165px;" tabindex="0" data-slick-index="6" aria-hidden="false">
+<img src="{% static 'shop/images/client-logo/client-logo-1.png' %}" alt="">
+</div><div class="item slick-slide slick-active" style="width: 165px;" tabindex="0" data-slick-index="7" aria-hidden="false">
+<img src="{% static 'shop/images/client-logo/client-logo-2.png' %}" alt="">
+</div><div class="item slick-slide" style="width: 165px;" tabindex="-1" data-slick-index="8" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-3.png' %}" alt="">
+</div><div class="item slick-slide" style="width: 165px;" tabindex="-1" data-slick-index="9" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-4.png' %}" alt="">
+</div><div class="item slick-slide" style="width: 165px;" tabindex="-1" data-slick-index="10" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-5.png' %}" alt="">
+</div><div class="item slick-slide" style="width: 165px;" tabindex="-1" data-slick-index="11" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-6.png' %}" alt="">
+</div><div class="item slick-slide slick-cloned" style="width: 165px;" tabindex="-1" data-slick-index="12" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-1.png' %}" alt="">
+</div><div class="item slick-slide slick-cloned" style="width: 165px;" tabindex="-1" data-slick-index="13" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-2.png' %}" alt="">
+</div><div class="item slick-slide slick-cloned" style="width: 165px;" tabindex="-1" data-slick-index="14" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-3.png' %}" alt="">
+</div><div class="item slick-slide slick-cloned" style="width: 165px;" tabindex="-1" data-slick-index="15" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-4.png' %}" alt="">
+</div><div class="item slick-slide slick-cloned" style="width: 165px;" tabindex="-1" data-slick-index="16" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-5.png' %}" alt="">
+</div><div class="item slick-slide slick-cloned" style="width: 165px;" tabindex="-1" data-slick-index="17" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-6.png' %}" alt="">
+</div><div class="item slick-slide slick-cloned" style="width: 165px;" tabindex="-1" data-slick-index="18" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-1.png' %}" alt="">
+</div><div class="item slick-slide slick-cloned" style="width: 165px;" tabindex="-1" data-slick-index="19" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-2.png' %}" alt="">
+</div><div class="item slick-slide slick-cloned" style="width: 165px;" tabindex="-1" data-slick-index="20" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-3.png' %}" alt="">
+</div><div class="item slick-slide slick-cloned" style="width: 165px;" tabindex="-1" data-slick-index="21" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-4.png' %}" alt="">
+</div><div class="item slick-slide slick-cloned" style="width: 165px;" tabindex="-1" data-slick-index="22" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-5.png' %}" alt="">
+</div><div class="item slick-slide slick-cloned" style="width: 165px;" tabindex="-1" data-slick-index="23" aria-hidden="true">
+<img src="{% static 'shop/images/client-logo/client-logo-6.png' %}" alt="">
+</div></div></div></div>
+<div class="check_now_area check_now_box">
+<div class="row m-0 justify-content-between">
+<div class="left">
+<div class="media">
+<div class="d-flex">
+<img src="{% static 'shop/images/check-4.png' %}" alt="">
+<img src="{% static 'shop/images/check-5.png' %}" alt="">
+<img src="{% static 'shop/images/check-6.png' %}" alt="">
+</div>
+<div class="media-body">
+<h4>Think you might be affected?</h4>
+<p>
+Try our simple coronavirus checker to find out what you need
+to do.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3 Ends -->
+
+{% endblock %}

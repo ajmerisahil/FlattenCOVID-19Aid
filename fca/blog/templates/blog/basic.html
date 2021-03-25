@@ -1,0 +1,300 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'blog/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'blog/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'blog/css/responsive.css' %}" />
+    <link rel="stylesheet" href="{% static 'blog/vendors/fontawesome/css/all.css' %}" />
+    <link rel="stylesheet" href="{% static 'blog/vendors/linearicons/css/linearicons.css' %}" />
+    <link rel="stylesheet" href="{% static 'blog/vendors/slick/slick.css' %}" />
+    <link rel="stylesheet" href="{% static 'blog/vendors/slick/slick-theme.css' %}" />
+    <link rel="stylesheet" href="{% static 'blog/vendors/mCustomScrollbar/jquery.mCustomScrollbar.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'blog/vendors/mCustomScrollbar/jquery.mCustomScrollbar.min.css' %}" />
+
+
+    <title> {% block title %}{% endblock %} </title>
+  </head>
+  <body>
+
+
+<!-- Nav Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+
+    <a class="navbar-brand" href="{% url 'ShopHome' %}">
+      <img src="{% static 'shop/images/logoc.png' %}" width="65" height="65" class="d-inline-block align-top" alt="Image">
+    </a>
+    <a class="navbar-brand" href="{% url 'ShopHome' %}">  Flatten COVID-19 Aid </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'ShopHome' %}">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Prevention
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="{% url 'ShopMeasures' %}"> Precautionary Measures </a></li>
+            <li><a class="dropdown-item" href="{% url 'ShopTips' %}"> Face Mask Tips </a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Symptoms
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="{% url 'ShopSymptoms' %}"> Typical Symptoms </a></li>
+            <li><a class="dropdown-item" href="{% url 'ShopPrevention' %}"> Prevention </a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="{% url 'ShopAppointment' %}">Appointment</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="{% url 'ShopAbout' %}"> About </a></li>
+            <li><a class="dropdown-item" href="{% url 'ShopDoctors' %}"> Doctors </a></li>
+            <li><a class="dropdown-item" href="{% url 'ShopComingsoon' %}"> Coming Soon </a></li>
+            <li><a class="dropdown-item" href="{% url 'ShopError' %}"> Error </a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blog
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="{% url 'BlogHome' %}"> Blog </a></li>
+            <li><a class="dropdown-item" href="#"> Blog Post </a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="{% url 'ShopContact' %}"> Contact Us</a>
+        </li>
+      </ul>       
+    </div>
+  </div>
+</nav>
+<!-- Nav Bar Ends -->
+
+
+
+    {% block body %}{% endblock %}
+
+
+
+<!-- Footer -->
+<div class="footer_widgets_area pad_top">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-6 col-sm-6">
+<aside class="f_widget contact_widget">
+<div class="f_title">
+<h3>Contacts</h3>
+</div>
+<div class="ct_wd_text">
+<div class="media">
+<div class="d-flex">
+<i class="linearicons-telephone"></i>
+</div>
+<div class="media-body">
+<h5>emergency call</h5>
+<a href="tel:+8801676790690">
+<h4>+91 88234 33555</h4>
+</a>
+</div>
+</div>
+<div class="media">
+<div class="d-flex">
+<i class="linearicons-map-marker"></i>
+</div>
+<div class="media-body">
+<p>
+Near Iscon Gathiya<br>
+S G Highway, Ahmedabad
+</p>
+</div>
+</div>
+<div class="media">
+<div class="d-flex">
+<i class="fab fa-skype"></i>
+</div>
+<div class="media-body">
+<a href="skype:md.rocky79">
+<h6>Skype ID: <span>flattencovid-19aid.org</span></h6>
+</a>
+</div>
+</div>
+<div class="media">
+<div class="d-flex">
+<i class="linearicons-envelope-open"></i>
+</div>
+<div class="media-body">
+<a href="mailto:rockybd1995@gmail.com">
+<h6>Email: <span>hi@flattencovid-19aid.org</span></h6>
+</a>
+</div>
+</div>
+</div>
+</aside>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+<aside class="f_widget list_widget">
+<div class="f_title">
+<h3>Prevention</h3>
+</div>
+<ul class="nav flex-column">
+<li>
+<a href="#"><i class="linearicons-radio-button"></i>Typical
+Symptoms</a>
+</li>
+<li>
+<a href="#"><i class="linearicons-radio-button"></i>How to
+Protect</a>
+</li>
+<li>
+<a href="#"><i class="linearicons-radio-button"></i>How are
+spreading</a>
+</li>
+<li>
+<a href="#"><i class="linearicons-radio-button"></i>Meet our
+Doctors</a>
+</li>
+<li>
+<a href="#"><i class="linearicons-radio-button"></i>About
+Coronavirus</a>
+</li>
+</ul>
+</aside>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+<aside class="f_widget list_widget">
+<div class="f_title">
+<h3>Protection</h3>
+</div>
+<ul class="nav flex-column">
+<li>
+<a href="#"><i class="linearicons-radio-button"></i>Typical
+Symptoms</a>
+</li>
+<li>
+<a href="#"><i class="linearicons-radio-button"></i>How to
+Protect</a>
+</li>
+<li>
+<a href="#"><i class="linearicons-radio-button"></i>How are
+spreading</a>
+</li>
+<li>
+<a href="#"><i class="linearicons-radio-button"></i>Meet our
+Doctors</a>
+</li>
+<li>
+<a href="#"><i class="linearicons-radio-button"></i>About
+Coronavirus</a>
+</li>
+</ul>
+</aside>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+<aside class="f_widget about_widget">
+<div class="f_title">
+<h3>About</h3>
+</div>
+<p>
+The disease was first identified in 2019 in Wuhan, the
+capital of Hubei, China, and has since spread globally,
+resulting in the 2019–2020 coronavirus pandemic.
+</p>
+<ul class="nav">
+<li>
+<a href="#"><i class="fab fa-facebook"></i></a>
+</li>
+<li>
+<a href="#"><i class="fab fa-twitter"></i></a>
+</li>
+<li>
+<a href="#"><i class="fab fa-instagram"></i></a>
+</li>
+<li>
+<a href="#"><i class="fab fa-youtube"></i></a>
+</li>
+<li>
+<a href="#"><i class="fab fa-vimeo-v"></i></a>
+</li>
+</ul>
+</aside>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!--Copyright Footer Start-->
+<div class="footer_copyright">
+<div class="container">
+<img src="blog/images/f-logo.png" alt="">
+<p>© Copyright
+<script>
+              document.write(new Date().getFullYear());
+            </script> Flatten Covid-19 Aid</p>
+<ul class="nav">
+<li><a href="#">Term of Use</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Impressum</a></li>
+</ul>
+<h6>
+Designed with <i class="linearicons-heart"></i>
+by <span>Sahil | Mihir | Deep</span>
+</h6>
+</div>
+</div>
+<!---->
+<!-- Footer Ends -->
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+
+
+<script src="{% static 'blog/js/jquery-3.4.1.min.js' %}"></script>
+<script src="{% static 'blog/js/popper.min.js' %}"></script>
+<script src="{% static 'blog/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'blog/vendors/corona-live/dashboard.js' %}"></script>
+<script src="{% static 'blog/vendors/isotop/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'blog/vendors/isotop/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'blog/vendors/slick/slick.min.js"' %}></script>
+<script src="{% static 'blog/vendors/scroll-animation/jquery.parallax-scroll.js' %}"></script>
+<script src="{% static 'blog/vendors/scroll-animation/parallax.js' %}"></script>
+<script src="{% static 'blog/vendors/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+<script src="{% static 'blog/vendors/animate-css/wow.min.js' %}"></script>
+<script src="{% static 'blog/vendors/animate-css/wow.min.js' %}"></script>
+<script src="{% static 'blog/js/theme.js' %}"></script>
+<script src="{% static 'blog/js/comming-soon.js' %}"></script>
+
+  </body>
+</html>

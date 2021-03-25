@@ -1,0 +1,55 @@
+{% extends 'shop/basic.html' %}
+{% load static %}
+{% block title %} ERROR {% endblock %}
+{% block body %}
+
+<!-- Section 1 -->
+<section class="error_area">
+<div class="overlay_bg"></div>
+<div class="container">
+<div class="search_found_text text-center">
+<div class="error_text">4<img src="{% static 'shop/images/covid19.png' %}" alt="">4</div>
+<h2>Something is wrong</h2>
+<p>The page you are looking for was moved, removed, renamed or might never existed.
+Try another search or go back to
+<a href="{% url 'ShopHome' %}">Homepage</a>
+</p>
+<form action="#" class="search-form input-group">
+<input type="text" name="search" class="form-control" placeholder="Search">
+<span class="input-group-addon"><button type="submit">
+<i class="linearicons-magnifier"></i></button>
+</span>
+</form>
+</div>
+</div>
+</section>
+<!-- Section 1 Ends -->
+
+<!-- Section 2 -->
+<section class="check_box_two">
+<div class="container">
+<div class="check_now_area check_now_box">
+<div class="row m-0 justify-content-between">
+<div class="left">
+<div class="media">
+<div class="d-flex">
+<img src="{% static 'shop/images/check-4.png' %}" alt="">
+<img src="{% static 'shop/images/check-4.png' %}" alt="">
+<img src="{% static 'shop/images/check-4.png' %}" alt="">
+</div>
+<div class="media-body">
+<h4>Think you might be affected?</h4>
+<p>
+Try our simple coronavirus checker to find out what you need
+to do.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2 Ends -->
+
+{% endblock %}

@@ -1,0 +1,612 @@
+{% extends 'shop/basic.html' %}
+{% load static %}
+{% block title %} COVID-19 {% endblock %}
+
+{% block body %}
+<!--Body Start-->
+
+
+<!--Banner Start-->
+<div style="margin-top:72px">
+<div class="container">
+<div class="row home_banner_inner">
+<div class="col-sm-7">
+<h5 class="wow fadeInUp" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp; font-size: 30px;">Stop COVID-19</h5>
+<h3 class="wow fadeInUp" data-wow-delay="500ms" style="visibility: visible; animation-delay: 500ms; animation-name: fadeInUp;">How can we fight together against Coronavirus?
+</h3>
+<p class="wow fadeInUp" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeInUp;">
+It’s never been clearer that we’re all global citizens,
+<br>and we all have a part to play. The novel strain of<br>
+coronavirus, has officially reached pandemic proportions.
+</p>
+<a class="main_btn wow fadeInLeft" data-wow-delay="300ms" href="#" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInLeft; margin-top:50px; ">How to Prevent</a>
+<div class="row home_option">
+<div class="col-lg-6 wow fadeIn" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeIn;">
+<div class="media">
+<div class="d-flex">
+<i class="linearicons-shield-check"></i>
+</div>
+<div class="media-body">
+<h4>Protection</h4>
+<p>How to protect yourself</p>
+</div>
+</div>
+</div>
+<div class="col-lg-6 wow fadeIn" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeIn;">
+<div class="media">
+<div class="d-flex">
+<i class="linearicons-pulse"></i>
+</div>
+<div class="media-body">
+<h4>Symptoms</h4>
+<p>Check basic symptoms</p>
+</div>
+</div>
+</div>
+<div class="col-lg-6 wow fadeIn" data-wow-delay="500ms" style="visibility: visible; animation-delay: 500ms; animation-name: fadeIn;">
+<div class="media">
+<div class="d-flex">
+<i class="linearicons-bubbles"></i>
+</div>
+<div class="media-body">
+<h4>Appointment</h4>
+<p>Get online consultation</p>
+</div>
+</div>
+</div>
+<div class="col-lg-6 wow fadeIn" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: fadeIn;">
+<div class="media">
+<div class="d-flex">
+<i class="linearicons-document2"></i>
+</div>
+<div class="media-body">
+<h4>About COVID-19</h4>
+<p>Read more about coronavirus</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-5">
+<img class="img-fluid wow fadeInRight" data-wow-delay="400ms" src="{% static 'shop/images/home-banner-cleaner.svg' %}" alt="" style="visibility: visible; animation-delay: 400ms; animation-name: fadeInRight;">
+</div>
+</div>
+</div>
+</div>
+<!--Banner End-->
+
+<!--Section-1 Start-->
+<section class="check_now_area">
+<div class="container">
+<div class="row m-0 justify-content-between">
+<div class="left">
+<div class="media">
+<div class="d-flex">
+<img src="{% static 'shop/images/check-1.png' %}" alt="">
+<img src="{% static 'shop/images/check-2.png' %}" alt="">
+<img src="{% static 'shop/images/check-3.png' %}" alt="">
+</div>
+<div class="media-body">
+<h4>Think you might be affected?</h4>
+<p>
+Try our simple coronavirus checker to find out what you need
+to do.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--Section-1 End-->
+
+
+
+<!--Section-2 Start-->
+<section style="margin-top:80px;">
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<div class="home_ab_img wow fadeInUp" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeInUp;">
+<img src="{% static 'shop/images/home-ab-img.png' %}" alt="">
+</div>
+</div>
+<div class="col-lg-6">
+<div class="home_ab_text">
+<div class="home_ab_text_inner">
+<div class="home_ab_item">
+<h6>COVID-19 the disease</h6>
+<h4>About the Coronavirus</h4>
+<p>
+Coronavirus disease 2019 (COVID-19) is an infectious
+disease caused by severe acute respiratory syndrome
+coronavirus 2. The disease was first identified in 2019 in
+Wuhan, the capital of Hubei, China, and has since spread
+globally, resulting in the 2019–2020 coronavirus pandemic.
+</p>
+</div>
+<div class="home_ab_item">
+<h4>What is the COVID-19?</h4>
+<p>
+COVID-19 is a new strain of coronavirus that has not been
+previously identified in humans. It was first identified
+in Wuhan, Hubei Province, China, where it has caused a
+large and ongoing outbreak. It has since spread more
+widely in China.
+</p>
+<a class="text_btn" href="#">Read more about <i class="linearicons-arrow-right"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--Section-2 End-->
+
+
+
+<!--Section-3 Start Corona Tracker-->
+
+<section class="world_wide_tracker pad_top">
+<div class="container">
+<img class="tracker_map" src="{% static 'shop/images/tracker-map-bg.png' %}" alt="">
+<div class="tracker_text">
+<h5>Worldwide Tracker</h5>
+<h2>Confirmed Coronavirus Cases</h2>
+<p>Last updated: April 08, 2020, 01:43 GMT</p>
+</div>
+<div class="row tracker_inner">
+<div class="col-lg-3 col-6 wow fadeIn" data-wow-delay="300" style="visibility: visible; animation-name: fadeIn;">
+<div class="media">
+<div class="d-flex">
+<img src="{% static 'shop/images/icon/corona-red-1.png ' %}" alt="">
+</div>
+<div class="media-body">
+<h2 id="total_cases"></h2>
+<p>Total Cases</p>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-6 wow fadeIn" data-wow-delay="400" style="visibility: visible; animation-name: fadeIn;">
+<div class="media">
+<div class="d-flex">
+<img src="{% static 'shop/images/icon/corona-black-1.png' %}" alt="">
+</div>
+<div class="media-body">
+<h2 id="total_deaths"></h2>
+<p>Total Deaths</p>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-6 wow fadeIn" data-wow-delay="500" style="visibility: visible; animation-name: fadeIn;">
+<div class="media">
+<div class="d-flex">
+<img src="{% static 'shop/images/icon/corona-green-1.png' %}" alt="">
+</div>
+<div class="media-body">
+<h2 id="total_recovered"></h2>
+<p>Recovered</p>
+ </div>
+</div>
+</div>
+<div class="col-lg-3 col-6 wow fadeIn" data-wow-delay="600" style="visibility: visible; animation-name: fadeIn;">
+<div class="media">
+<div class="d-flex">
+<img src="{% static 'shop/images/icon/corona-yellow-1.png' %}" alt="">
+</div>
+<div class="media-body">
+<h2 id="new_cases"></h2>
+<p>New Cases</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--Section-3 End-->
+
+
+
+
+<!--Section-4 Start-->
+<section class="symptoms_area" >
+<div class="container" >
+<ul class="nav image_list">
+<li><img src="{% static 'shop/images/logoc.png' %}" alt=""></li>
+<li><img src="{% static 'shop/images/symptoms-user/sm-2.png' %}" alt=""></li>
+<li><img src="{% static 'shop/images/covid19.png' %}" alt=""></li>
+</ul>
+
+<div style="padding-top:20px;">
+<h1 style="color:red;">Symptoms of COVID-19</h1>
+<h2 style="color:green;">What are the basic symptoms?</h2>
+
+</div>
+
+<div class="row symptoms_inner">
+<div class="col-lg-6 wow fadeInUp" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeInUp;">
+<div class="symptoms_item">
+<div class="media">
+<div class="d-flex">
+<img src="{% static 'shop/images/symptoms-user/symptoms-1.png' %}" alt="">
+</div>
+<div class="media-body">
+<h4>High fever</h4>
+<p>
+Fever is a key symptom, experts say. Don't fixate on a
+number, but know it's not a fever until temperature
+reaches at least 39°C.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 wow fadeInUp" data-wow-delay="500ms" style="visibility: visible; animation-delay: 500ms; animation-name: fadeInUp;">
+<div class="symptoms_item">
+<div class="media">
+<div class="d-flex">
+<img src="{% static 'shop/images/symptoms-user/symptoms-2.png' %}" alt="">
+</div>
+<div class="media-body">
+<h4>Sortness of Breath</h4>
+<p>
+You feel hot to touch on your chest or back It is a common
+sign and also may appear in 2-10 days if you affected.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 wow fadeInUp" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: fadeInUp;">
+<div class="symptoms_item">
+<div class="media">
+<div class="d-flex">
+<img src="{% static 'shop/images/symptoms-user/symptoms-3.png' %}" alt="">
+</div>
+<div class="media-body">
+<h4>Dry Cough</h4>
+<p>
+Coughing is another key symptom, but it's not just any
+cough, said Schaffner. It should be a dry cough that you
+feel in your chest.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 wow fadeInUp" data-wow-delay="700ms" style="visibility: visible; animation-delay: 700ms; animation-name: fadeInUp;">
+<div class="symptoms_item">
+<div class="media">
+<div class="d-flex">
+<img src="{% static 'shop/images/symptoms-user/symptoms-4.png' %}" alt="">
+</div>
+<div class="media-body">
+<h4>Headache</h4>
+<p>
+Around 1 out of every 6 people who gets COVID-19 becomes
+seriously ill and develops difficulty breathing or
+shortness of breath.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+ </div>
+</section>
+<!--Section-4 End-->
+
+
+
+
+
+<!--Section-5 Start-->
+<section class="protect_yourself_area p_100">
+<div class="container">
+<div class="main_title text-center">
+<h5>What you need to do</h5>
+<h2>How to protect yourself?</h2>
+</div>
+<div class="row protect_inner">
+<div class="col-lg-6">
+<div class="row protect_list_inner">
+<div class="col-6">
+<div class="protect_list_item">
+<div class="protect_list_title">
+<h3>You should do</h3>
+<h6>Be sure to follow it</h6>
+</div>
+<ul class="nav flex-column">
+<li>
+<a ><i class="linearicons-home4"></i>Stay at home</a>
+</li>
+<li>
+<a ><i class="linearicons-desk-tape"></i>Wear mask</a>
+</li>
+<li>
+<a ><i class="linearicons-tissue"></i>Always use
+tissues</a>
+</li>
+<li>
+<a ><i class="linearicons-couch"></i>Disinfect your
+home</a>
+</li>
+<li>
+<a ><i class="linearicons-rain"></i>Wash your hands</a>
+</li>
+<li>
+<a ><i class="linearicons-thermometer"></i>Frequent
+self-isolation</a>
+</li>
+<li>
+<a ><i class="linearicons-bottle"></i>Frequent
+waterintake</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-6">
+<div class="protect_list_item red">
+<div class="protect_list_title">
+<h3>You should avoid</h3>
+<h6>Be sure to follow it</h6>
+</div>
+<ul class="nav flex-column">
+<li>
+<a ><i class="linearicons-man-woman"></i>Social
+distance</a>
+</li>
+<li>
+<a ><i class="linearicons-paw"></i>Avoid animals</a>
+</li>
+<li>
+<a ><i class="linearicons-woman"></i>Don't touch your
+face</a>
+</li>
+<li>
+<a ><i class="linearicons-hand"></i>Avoid handshaking</a>
+</li>
+<li>
+<a ><i class="linearicons-chair"></i>Avoid infected
+surfaces</a>
+</li>
+<li>
+<a ><i class="linearicons-drop-crossed"></i>Avoid
+droplets</a>
+</li>
+<li>
+<a ><i class="linearicons-plane-crossed"></i>Don’t
+travel</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="protect_self_text">
+<h3>What does self-isolation involve?</h3>
+<p>
+If you need to self-isolate, you should take action
+immediately. You must stay inside and avoid all contact with
+other people.
+</p>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="protect_img text-center apps_craft_animation" style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+<img class="img-fluid wow fadeIn" data-wow-delay="500ms" src="{% static 'shop/images/protect-img.png' %}" alt="" style="visibility: visible; animation-delay: 500ms; animation-name: fadeIn;">
+<ul class="nav">
+<li><img src="{% static 'shop/images/icon/project-virus-1.png' %}" alt=""></li>
+<li><img src="{% static 'shop/images/icon/project-virus-2.png' %}" alt=""></li>
+<li><img class="layer layer2" data-depth="0.5" src="{% static 'shop/images/icon/project-virus-3.png' %}" alt="" style="position: relative; display: block; left: 0px; top: 0px; transform: translate3d(12.6113px, 16.9696px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"></li>
+<li><img src="{% static 'shop/images/icon/project-virus-4.png' %}" alt=""></li>
+<li><img src="{% static 'shop/images/icon/project-virus-5.png' %}" alt=""></li>
+<li><img src="{% static 'shop/images/icon/project-virus-6.png' %}" alt=""></li>
+<li><img src="{% static 'shop/images/icon/project-virus-7.png' %}" alt=""></li>
+<li><img src="{% static 'shop/images/icon/project-virus-8.png' %}" alt=""></li>
+<li><img class="layer layer2" data-depth="0.5" src="{% static 'shop/images/icon/project-virus-9.png' %}" alt="" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(12.6113px, 16.9696px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"></li>
+<li><img src="{% static 'shop/images/logoc.png' %}" alt=""></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--Section-5 End-->
+
+
+
+
+<!--Section-6 Start-->
+<section class="washing_process_area pad_btm">
+<div class="container">
+<div class="main_title text-center white">
+<h5>Hand washing process</h5>
+<h2>How to wash your Hands</h2>
+</div>
+<div class="washing_process_inner row">
+<div class="col-lg-2 col-sm-4 col-6 wow fadeIn" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeIn;">
+<div class="washing_item">
+<div class="icon">
+<img src="{% static 'shop/images/icon/washing-1.png' %}" alt="">
+<div class="number">
+1
+</div>
+</div>
+<p><span>Apply soap</span> and ruv your hands together</p>
+</div>
+</div>
+<div class="col-lg-2 col-sm-4 col-6 wow fadeIn" data-wow-delay="500ms" style="visibility: visible; animation-delay: 500ms; animation-name: fadeIn;">
+<div class="washing_item">
+<div class="icon">
+<img src="{% static 'shop/images/icon/washing-2.png' %}" alt="">
+<div class="number">
+2
+</div>
+</div>
+<p>
+<span>Use one hand</span> to rub the back of the other hand
+and vice versa
+</p>
+</div>
+</div>
+<div class="col-lg-2 col-sm-4 col-6 wow fadeIn" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: fadeIn;">
+<div class="washing_item">
+<div class="icon">
+<img src="{% static 'shop/images/icon/washing-3.png' %}" alt="">
+<div class="number">
+3
+</div>
+</div>
+<p>
+<span>Rub your hands</span> together and clean between your
+fingers
+</p>
+</div>
+</div>
+<div class="col-lg-2 col-sm-4 col-6 wow fadeIn" data-wow-delay="700ms" style="visibility: visible; animation-delay: 700ms; animation-name: fadeIn;">
+<div class="washing_item">
+<div class="icon">
+<img src="{% static 'shop/images/icon/washing-4.png' %}" alt="">
+<div class="number">
+4
+</div>
+</div>
+<p>
+<span>Rub the back</span> of your fingers against your palms
+</p>
+</div>
+</div>
+<div class="col-lg-2 col-sm-4 col-6 wow fadeIn" data-wow-delay="800ms" style="visibility: visible; animation-delay: 800ms; animation-name: fadeIn;">
+<div class="washing_item">
+<div class="icon">
+<img src="{% static 'shop/images/icon/washing-5.png' %}" alt="">
+<div class="number">
+5
+</div>
+</div>
+<p>
+<span>Rub your thumb</span> using your other hand and vice
+versa
+</p>
+</div>
+</div>
+<div class="col-lg-2 col-sm-4 col-6 wow fadeIn" data-wow-delay="900ms" style="visibility: visible; animation-delay: 900ms; animation-name: fadeIn;">
+<div class="washing_item">
+<div class="icon">
+ <img src="{% static 'shop/images/icon/washing-6.png' %}" alt="">
+<div class="number">
+6
+</div>
+</div>
+<p>
+<span>Rub your tips</span> of your fingers on the palm of your
+other hand and vice versa
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--Section-6 End-->
+
+
+<!--Section-7 Start-->
+
+<section class="prevent_area">
+<div class="container">
+<div class="row prevent_inner">
+<div class="col-lg-6">
+<div class="prevent_item_inner row" style="position: relative; height: 753.476px;">
+<div class="col-sm-6 wow fadeInUp" data-wow-delay="400ms" style="position: absolute; left: 0%; top: 0px; visibility: visible; animation-delay: 400ms; animation-name: fadeInUp;">
+<div class="prevent_item">
+<div class="prevent_img">
+<img class="img-fluid" src="{% static 'shop/images/prevent/prevent-1.png' %}" alt="">
+</div>
+<div class="prevent_text">
+<h4>Stay at home</h4>
+<p>
+Stay at home if you perceive the symptoms and consult
+your doctor on phone.
+</p>
+</div>
+</div>
+</div>
+<div class="col-sm-6 wow fadeInUp" data-wow-delay="500ms" style="position: absolute; left: 50%; top: 0px; visibility: visible; animation-delay: 500ms; animation-name: fadeInUp;">
+<div class="prevent_item">
+<div class="prevent_img">
+<img class="img-fluid" src="{% static 'shop/images/prevent/prevent-2.png' %}" alt="">
+</div>
+<div class="prevent_text">
+<h4>Wash your hands often</h4>
+<p>
+Clean your hands with alcohol-based rub or wash them
+with soap for at least 20 seconds.
+</p>
+</div>
+</div>
+</div>
+<div class="col-sm-6 wow fadeInUp" data-wow-delay="600ms" style="position: absolute; left: 0%; top: 356.738px; visibility: visible; animation-delay: 600ms; animation-name: fadeInUp;">
+<div class="prevent_item">
+<div class="prevent_img">
+<img class="img-fluid" src="{% static 'shop/images/prevent/prevent-3.png' %}" alt="">
+</div>
+<div class="prevent_text">
+<h4>Keep social distance</h4>
+<p>
+Keep at least 2 m distance between yourself &amp; anyone if
+you go among people.
+</p>
+</div>
+</div>
+</div>
+<div class="col-sm-6 wow fadeInUp" data-wow-delay="700ms" style="position: absolute; left: 50%; top: 396.738px; visibility: visible; animation-delay: 700ms; animation-name: fadeInUp;">
+<div class="prevent_item">
+<div class="prevent_img">
+<img class="img-fluid" src="{% static 'shop/images/prevent/prevent-4.png' %}" alt="">
+</div>
+<div class="prevent_text">
+<h4>Wear Facemask</h4>
+<p>
+When you are around other people and before you enter a
+healthcare provider’s.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="prevent_details">
+<div class="prevent_details_text">
+<h5>What should you do</h5>
+<h2>How to prevent Coronavirus?</h2>
+<p>
+Some details about how the disease is spread are unknown and
+is being determined.The WHO and CDC state that it is
+primarily spread during close contact and by respiratory
+droplets produced when people cough or sneeze; with close
+contact being within 1 to 2 meters (3 to 6 feet). A study in
+Singapore found that an uncovered coughing can lead to
+droplets travelling up to 4.5 metres (15 feet).
+</p>
+<p>
+Respiratory droplets may also be produced during breathing
+ out, including when talking, though the virus is not
+generally airborne. These droplets can land in the mouths or
+noses of people who are nearby or possibly be inhaled into
+the lungs. Some medical procedures such as intubation and
+cardiopulmonary...
+</p>
+<a class="green_btn" href="{% url 'ShopPrevention' %}"><i class="linearicons-shield-check"></i> Read more about
+Prevention</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--Section-7 End-->
+
+<!--Body End-->
+{% endblock %}

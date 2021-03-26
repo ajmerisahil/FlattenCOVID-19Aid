@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Contact
+from .models import Contact,Appointment
 
 # Create your views here.
 
@@ -11,6 +11,19 @@ def about(request):
     return render(request , 'shop/about.html')
 
 def appointment(request):
+    if request.method == "POST":
+        print(request)
+        name = request.POST.get('name', '')
+        email = request.POST.get('email', '')
+        skype = request.POST.get('skype', '')
+        number = request.POST.get('number', '')
+        date = request.POST.get('date', '')
+        time = request.POST.get('time', '')
+        subject = request.POST.get('subject', '')
+        message = request.POST.get('message', '')
+        print(name, email, skype, number, date, time, subject, message)
+        appoint = Appointment(name=name,email=email,skype=skype,number=number,date=date,time=time,subject=subject,message=message)
+        appoint.save()
     return render(request,'shop/appointment.html')
 
 def comingsoon(request):

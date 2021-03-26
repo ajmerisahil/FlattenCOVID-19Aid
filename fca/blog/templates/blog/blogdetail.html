@@ -113,49 +113,39 @@ contains everything that the body needs to create specific antibodies to fight o
 the virus."
 </p>
 </div>
-<div class="comment_box">
-<h3 class="cm_title_br">Leave your reply</h3>
-<form class="row contact_us_form appoinment_form" action="http://paul-themes.com/html/covid-19/contact_process.php" id="contactForm" novalidate="novalidate">
-<div class="col-md-6">
-<div class="form-group">
-<input class="form-control" type="text" id="name" name="name" placeholder="">
-<label><i class="linearicons-user"></i>Your Name</label>
-</div>
-</div>
- <div class="col-md-6">
-<div class="form-group">
-<input class="form-control" type="text" id="email" name="email" placeholder="">
-<label><i class="linearicons-envelope-open"></i>Your Email
-Address</label>
-</div>
-</div>
-<div class="col-lg-12">
-<div class="form-group">
-<input class="form-control" type="text" id="subject" name="subject" placeholder="">
-<label><i class="linearicons-document"></i>
-Subject</label>
-</div>
-</div>
-<div class="col-lg-12">
-<div class="form-group">
-<textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
-<label><i class="linearicons-pencil4"></i>Your Message</label>
-</div>
-</div>
-<div class="col-lg-12">
-<div class="form-group checkbox_field">
-<div class="checkbox">
-<input type="checkbox" value="None" id="policy" name="check">
-<label class="l_text" for="policy">Save my name, email, and website in
-this browser for the next time I comment.</label>
-</div>
-<button type="submit" class="green_btn">
-Post Comment
-</button>
-</div>
-</div>
+
+
+<!-- Form -->
+<div class="container" style="margin-top:50px">
+ <h1 class="text-center"> Leave an Comment </h1>
+<form action="/blog/blogdetail/" method="post">{% csrf_token %}
+  <div class="form-group">
+   <label for="name"> <h4 style="margin-top:25px"> Name </h4> </label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+  </div>
+
+  <div class="form-group">
+   <label for="name"> <h4> Email </h4> </label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+  </div>
+
+  <div class="form-group">
+   <label for="name"> <h4> Phone Number </h4>  </label>
+    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your Phone Number">
+  </div>
+
+  <div class="form-group">
+   <label for="desc"> <h4> Your Comment </h4>  </label>
+    <textarea class="form-control" id="desc" name="desc" placeholder="Enter your Comment" rows="3"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-info">Submit</button>
+
 </form>
 </div>
+<!-- Form ends -->
+
+
 </div>
 </div></div>
 </div>

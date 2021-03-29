@@ -9,7 +9,6 @@ urlpatterns = [
     path('comingsoon/',views.comingsoon,name="ShopComingsoon"),
     path('contact/', views.contact , name="ShopContact" ),
     path('doctors/', views.doctors, name="ShopDoctors"),
-    path('epass/', views.epass, name="ShopEpass"),
     path('error/', views.error, name="ShopError"),
     path('hospitalization/',views.hospitalization,name="ShopHospitalization"),
     path('logout/',views.logout,name="ShopLogout"),

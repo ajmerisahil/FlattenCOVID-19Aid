@@ -46,9 +46,6 @@ def contact(request):
 def doctors(request):
     return render(request , 'shop/doctors.html')
 
-def epass(request):
-    return render(request,'shop/epass.html')
-
 def error(request):
     return render(request , 'shop/error.html')
 

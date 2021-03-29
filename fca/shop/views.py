@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.contrib.auth.models import User,auth
 from django.http import HttpResponseRedirect
 from django.contrib.auth.hashers import make_password 
-from .models import Contact,Appointment
+from .models import Contact,Appointment,Hospital,Sanitization
 
 # Create your views here.
 
@@ -46,8 +46,25 @@ def contact(request):
 def doctors(request):
     return render(request , 'shop/doctors.html')
 
+def epass(request):
+    return render(request,'shop/epass.html')
+
 def error(request):
     return render(request , 'shop/error.html')
+
+def hospitalization(request):
+    if request.method=="POST":
+        name  = request.POST.get('name' , '')
+        email = request.POST.get('email' , '')
+        phone = request.POST.get('phone' , '')
+        age = request.POST.get('age', '')
+        date = request.POST.get('date','')
+        hospital = request.POST.get('hospital','')
+        desc= request.POST.get('desc' , '')
+        print( name , email , phone , age , date ,hospital , desc)
+        hospital = Hospital(name=name,email=email,phone=phone,age=age,date=date,hospital=hospital,desc=desc)
+        hospital.save()
+    return render(request,'shop/hospitalization.html')
 
 def logout(request):
     auth.logout(request)
@@ -58,6 +75,20 @@ def measures(request):
 
 def prevention(request):
     return render(request,'shop/prevention.html')
+
+
+def sanitization(request):
+    if request.method=="POST":
+        name  = request.POST.get('name' , '')
+        email = request.POST.get('email' , '')
+        phone = request.POST.get('phone' , '')
+        address = request.POST.get('address', '')
+        desc= request.POST.get('desc' , '')
+        print( name , email , phone , address , desc)
+        sanitize = Sanitization(name=name,email=email,phone=phone,address=address,desc=desc)
+        sanitize.save()
+    return render(request,'shop/sanitization.html')
+
 
 def shoplogin(request):
     if request.method == "POST":
@@ -109,7 +140,6 @@ def symptoms(request):
 
 def tips(request):
     return render(request,'shop/tips.html')
-
 
 
 

@@ -1,0 +1,196 @@
+{% extends 'shop/basic.html' %}
+{% load static %}
+{% block title %} SANITIZATION {% endblock %}
+{% block body %}
+
+
+<!-- Section -->
+<section class="breadcrumb_area">
+<div class="container">
+<div class="breadcrumb_text">
+<h6 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;"> Emergency Services </h6>
+<h3 class="wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;"> Sanitization </h3>
+<ul class="nav justify-content-center wow fadeInUp" data-wow-delay="0.3s">
+<li><a href="/">Home</a></li>
+<li><a href="/sanitization/">Sanitization</a></li>
+</ul>
+
+</div>
+</div>
+</section>
+<!-- Section Ends -->
+
+<!-- Section 1 -->
+<section style="margin-top:80px;">
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<div class="home_ab_img wow fadeInUp" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeInUp;">
+<img src="/static/shop/images/spray.png" height="350" alt="">
+</div>
+</div>
+<div class="col-lg-6">
+<div class="home_ab_text">
+<div class="home_ab_text_inner">
+<div class="home_ab_item">
+<h6>COVID-19 the disease</h6>
+<h4>About the Coronavirus</h4>
+<p>
+Coronavirus disease 2019 (COVID-19) is an infectious
+disease caused by severe acute respiratory syndrome
+coronavirus 2. The disease was first identified in 2019 in
+Wuhan, the capital of Hubei, China, and has since spread
+globally, resulting in the 2019–2020 coronavirus pandemic.
+</p>
+</div>
+<div class="home_ab_item">
+<h4>What is the COVID-19?</h4>
+<p>
+COVID-19 is a new strain of coronavirus that has not been
+previously identified in humans. It was first identified
+in Wuhan, Hubei Province, China, where it has caused a
+large and ongoing outbreak. It has since spread more
+widely in China.
+</p>
+<a class="text_btn" href="#">Read more about <i class="linearicons-arrow-right"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section Ends -->
+
+<!-- Section 2 -->
+<section class="washing_process_area pad_btm">
+<div class="container">
+<div class="main_title text-center white">
+<h5>Hand washing process</h5>
+<h2>How to wash your Hands</h2>
+</div>
+<div class="washing_process_inner row">
+<div class="col-lg-2 col-sm-4 col-6 wow fadeIn" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeIn;">
+<div class="washing_item">
+<div class="icon">
+<img src="/static/shop/images/icon/washing-1.png" alt="">
+<div class="number">
+1
+</div>
+</div>
+<p><span>Apply soap</span> and ruv your hands together</p>
+</div>
+</div>
+<div class="col-lg-2 col-sm-4 col-6 wow fadeIn" data-wow-delay="500ms" style="visibility: visible; animation-delay: 500ms; animation-name: fadeIn;">
+<div class="washing_item">
+<div class="icon">
+<img src="/static/shop/images/icon/washing-2.png" alt="">
+<div class="number">
+2
+</div>
+</div>
+<p>
+<span>Use one hand</span> to rub the back of the other hand
+and vice versa
+</p>
+</div>
+</div>
+<div class="col-lg-2 col-sm-4 col-6 wow fadeIn" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: fadeIn;">
+<div class="washing_item">
+<div class="icon">
+<img src="/static/shop/images/icon/washing-3.png" alt="">
+<div class="number">
+3
+</div>
+</div>
+<p>
+<span>Rub your hands</span> together and clean between your
+fingers
+</p>
+</div>
+</div>
+<div class="col-lg-2 col-sm-4 col-6 wow fadeIn" data-wow-delay="700ms" style="visibility: visible; animation-delay: 700ms; animation-name: fadeIn;">
+<div class="washing_item">
+<div class="icon">
+<img src="/static/shop/images/icon/washing-4.png" alt="">
+<div class="number">
+4
+</div>
+</div>
+<p>
+<span>Rub the back</span> of your fingers against your palms
+</p>
+</div>
+</div>
+<div class="col-lg-2 col-sm-4 col-6 wow fadeIn" data-wow-delay="800ms" style="visibility: visible; animation-delay: 800ms; animation-name: fadeIn;">
+<div class="washing_item">
+<div class="icon">
+<img src="/static/shop/images/icon/washing-5.png" alt="">
+<div class="number">
+5
+</div>
+</div>
+<p>
+<span>Rub your thumb</span> using your other hand and vice
+versa
+</p>
+</div>
+</div>
+<div class="col-lg-2 col-sm-4 col-6 wow fadeIn" data-wow-delay="900ms" style="visibility: visible; animation-delay: 900ms; animation-name: fadeIn;">
+<div class="washing_item">
+<div class="icon">
+ <img src="/static/shop/images/icon/washing-6.png" alt="">
+<div class="number">
+6
+</div>
+</div>
+<p>
+<span>Rub your tips</span> of your fingers on the palm of your
+other hand and vice versa
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2 Ends  -->
+
+<!-- Section 3 -->
+
+<div class="container" style="margin-top:50px;margin-bottom:50px;">
+ <h1 class="text-center"> Sanitization Details </h1>
+<form action="/sanitization/" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="uevceq4GbiwaKiVhBpnY18cEtlB7FQtlrUc3KfYg4YpV0WMZiBWdFCHE8GlxfdyF">{% csrf_token %}
+  <div class="form-group">
+   <label for="name"> <h4 style="margin-top:25px"> Name </h4> </label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+  </div>
+
+  <div class="form-group">
+   <label for="name"> <h4> Email </h4> </label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+  </div>
+
+  <div class="form-group">
+   <label for="name"> <h4> Phone Number </h4>  </label>
+    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your Phone Number">
+  </div>
+
+   <div class="form-group">
+   <label for="desc"> <h4> Address </h4>  </label>
+    <textarea class="form-control" id="address" name="address" rows="6" placeholder="Enter Your Address"></textarea>
+  </div>
+
+
+  <div class="form-group">
+   <label for="desc"> <h4> Any Special Requirements </h4>  </label>
+    <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
+  </div>
+
+
+  <button type="submit" class="btn btn-info" style="margin-top:30px">Submit</button>
+
+</form>
+</div>
+<!-- Section 3 Ends -->
+
+{% endblock %}

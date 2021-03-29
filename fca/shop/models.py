@@ -27,3 +27,30 @@ class Appointment(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Hospital(models.Model):
+    hosp_id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    email = models.CharField(max_length=70, default="")
+    phone = models.CharField(max_length=70, default="")
+    age = models.CharField(max_length=70, default="")
+    date = models.CharField(max_length=70, default="")
+    hospital = models.CharField(max_length=70, default="")
+    desc = models.CharField(max_length=500, default="")
+
+    def __str__(self):
+        return self.name
+
+
+class Sanitization(models.Model):
+    sant_id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    email = models.CharField(max_length=70, default="")
+    phone = models.CharField(max_length=70, default="")
+    address = models.CharField(max_length=500, default="")
+    desc = models.CharField(max_length=500, default="")
+
+    def __str__(self):
+        return self.name
+

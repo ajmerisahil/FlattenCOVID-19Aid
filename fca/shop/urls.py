@@ -9,14 +9,16 @@ urlpatterns = [
     path('comingsoon/',views.comingsoon,name="ShopComingsoon"),
     path('contact/', views.contact , name="ShopContact" ),
     path('doctors/', views.doctors, name="ShopDoctors"),
+    path('epass/', views.epass, name="ShopEpass"),
     path('error/', views.error, name="ShopError"),
+    path('hospitalization/',views.hospitalization,name="ShopHospitalization"),
     path('logout/',views.logout,name="ShopLogout"),
     path('shoplogin/',views.shoplogin,name="ShopLogin"),
     path('measures/',views.measures,name="ShopMeasures"),
     path('prevention/',views.prevention,name="ShopPrevention"),
+    path('sanitization/',views.sanitization,name="ShopSanitization"),
     path('signup/',views.signup,name="ShopSignup"),
     path('symptoms/',views.symptoms,name="ShopSymptoms"),
     path('tips/',views.tips,name="ShopTips"),
-    
 
 ]

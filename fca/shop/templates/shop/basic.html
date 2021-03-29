@@ -25,17 +25,19 @@
 
 
 <!-- Nav Bar -->
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
+  <div class="container-fluid">
 
     <a class="navbar-brand" href="{% url 'ShopHome' %}">
       <img src="{% static 'shop/images/logoc.png' %}" width="65" height="65" class="d-inline-block align-top" alt="Image">
     </a>
-    <a class="navbar-brand" href="{% url 'ShopHome' %}">  Flatten COVID-19 Aid </a>
+    <a class="navbar-brand" href="{% url 'ShopHome' %}"> <h3>  Flatten COVID-19 Aid </h3> </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <div class="container collapse navbar-collapse" id="navbarNavDropdown">
+      <h5>
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="{% url 'ShopHome' %}">Home</a>
@@ -45,8 +47,8 @@
             Prevention
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="{% url 'ShopMeasures' %}"> Precautionary Measures </a></li>
-            <li><a class="dropdown-item" href="{% url 'ShopTips' %}"> Face Mask Tips </a></li>
+            <li>  <a class="dropdown-item" href="{% url 'ShopMeasures' %}"> <h6> Precautionary Measures </h6> </a>  </li>
+            <li><a class="dropdown-item" href="{% url 'ShopTips' %}"> <h6> Face Mask Tips </h6> </a></li>
           </ul>
         </li>
 
@@ -55,23 +57,35 @@
             Symptoms
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="{% url 'ShopSymptoms' %}"> Typical Symptoms </a></li>
-            <li><a class="dropdown-item" href="{% url 'ShopPrevention' %}"> Prevention </a></li>
+            <li><a class="dropdown-item" href="{% url 'ShopSymptoms' %}"> <h6> Typical Symptoms </h6> </a></li>
+            <li><a class="dropdown-item" href="{% url 'ShopPrevention' %}"> <h6> Prevention </h6> </a></li>
           </ul>
         </li>
 
         <li class="nav-item">
           <a class="nav-link active" href="{% url 'ShopLogin' %}">Appointment</a>
         </li>
+
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Emergency Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="{% url 'ShopHospitalization' %}"> <h6> Hopsitalization </h6> </a></li>
+            <li><a class="dropdown-item" href="{% url 'ShopSanitization' %}"> <h6> Sanitization </h6> </a></li>
+            <li><a class="dropdown-item" href="{% url 'ShopEpass' %}"> <h6>  E-Pass </h6>  </a></li>
+          </ul>
+        </li>
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Pages
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="{% url 'ShopAbout' %}"> About </a></li>
-            <li><a class="dropdown-item" href="{% url 'ShopDoctors' %}"> Doctors </a></li>
-            <li><a class="dropdown-item" href="{% url 'ShopComingsoon' %}"> Coming Soon </a></li>
-            <li><a class="dropdown-item" href="{% url 'ShopError' %}"> Error </a></li>
+            <li><a class="dropdown-item" href="{% url 'ShopAbout' %}"> <h6> About </h6> </a></li>
+            <li><a class="dropdown-item" href="{% url 'ShopDoctors' %}"> <h6> Doctors </h6> </a></li>
+            <li><a class="dropdown-item" href="{% url 'ShopComingsoon' %}"> <h6> Coming Soon </h6> </a></li>
+            <li><a class="dropdown-item" href="{% url 'ShopError' %}"> <h6> Error </h6> </a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -79,14 +93,15 @@
             Blog
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="{% url 'BlogHome' %}"> Blog </a></li>
-            <li><a class="dropdown-item" href="{% url 'BlogDetail' %}"> Blog Details </a></li>
+            <li><a class="dropdown-item" href="{% url 'BlogHome' %}"> <h6> Blog </h6> </a></li>
+            <li><a class="dropdown-item" href="{% url 'BlogDetail' %}"> <h6> Blog Details </h6> </a></li>
           </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="{% url 'ShopContact' %}"> Contact Us</a>
         </li>
-      </ul>       
+      </ul>
+      </h5>
     </div>
   </div>
 </nav>

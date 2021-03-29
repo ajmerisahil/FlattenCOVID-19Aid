@@ -1,0 +1,162 @@
+{% extends 'shop/basic.html' %}
+{% load static %}
+{% block title %} HOSPITALIZATION {% endblock %}
+{% block body %}
+
+<!-- Section -->
+<section class="breadcrumb_area">
+<div class="container">
+<div class="breadcrumb_text">
+<h6 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;"> Emergency Services </h6>
+<h3 class="wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;"> Hospitalization</h3>
+<ul class="nav justify-content-center wow fadeInUp" data-wow-delay="0.3s">
+<li><a href="/">Home</a></li>
+<li><a href="/hospitalization/">Hospitalization</a></li>
+</ul>
+
+</div>
+</div>
+</section>
+<!-- Section Ends -->
+
+<!-- Section 1 -->
+<section class="isolation_area isolation_margin_bottom">
+<div class="container">
+<div class="main_title text-center white">
+<h2 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Recommend Self-isolation</h2>
+<p class="wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+Self-isolation at home has been recommended for those diagnosed
+with COVID-19 and those who suspect they have been infected.
+</p>
+</div>
+<div class="row">
+<div class="col-lg-4 col-md-6">
+<div class="media isolation_item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+<div class="isolation_person_img">
+<img src="/static/shop/images/symptom/isolation_man.png" alt="">
+</div>
+<div class="media-body">
+<h5>Coughing, sneezing and sore throat</h5>
+<p>
+Fever is a key symptom, experts say. Don't fixate on a
+number, but know it's really not a fever until your
+temperature reaches at least 39°C.
+</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="media isolation_item wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+<div class="isolation_person_img">
+<img src="/static/shop/images/symptom/isolation_man.png" alt="">
+</div>
+<div class="media-body">
+<h5>Hot fever and shortness breath</h5>
+<p>
+Fever is a key symptom, experts say. Don't fixate on a
+number, but know it's really not a fever until your
+temperature reaches at least 39°C.
+</p>
+
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="media isolation_item wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+<div class="isolation_person_img">
+<img src="/static/shop/images/symptom/isolation_man.png" alt="">
+</div>
+<div class="media-body">
+<h5>Strong headache and chills</h5>
+<p>
+Fever is a key symptom, experts say. Don't fixate on a
+number, but know it's really not a fever until your
+temperature reaches at least 39°C.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Ends Section 1 -->
+
+<!-- Section 2 -->
+<div class="container" style="margin-top:50px;margin-bottom:50px;">
+ <h1 class="text-center"> Hospitalization Details </h1>
+<form action="/hospitalization/" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="uevceq4GbiwaKiVhBpnY18cEtlB7FQtlrUc3KfYg4YpV0WMZiBWdFCHE8GlxfdyF">{% csrf_token %}
+  <div class="form-group">
+   <label for="name"> <h4 style="margin-top:25px"> Name </h4> </label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+  </div>
+
+  <div class="form-group">
+   <label for="name"> <h4> Email </h4> </label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+  </div>
+
+  <div class="form-group">
+   <label for="name"> <h4> Phone Number </h4>  </label>
+    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your Phone Number">
+  </div>
+
+   <div class="form-group">
+   <label for="age"> <h4> Age </h4> </label>
+    <input type="text" class="form-control" id="age" name="age" placeholder="Enter your Age">
+  </div>
+
+
+   <div class="form-group">
+     <label for="date"> <h4> Date of Birth  - - -  </h4> </label>
+     <input type="date" id="date" name="date">
+     <label for="date"> <h6 style="margin-top:25px"> &nbsp; Choose Date </h6> </label>
+  </div>
+
+   <div class="form-group">
+   <label> <h4> Type of Hospital </h4> </label>
+    <select class="form-control" id="exampleFormControlSelect1" name="hospital">
+        <option> COVID-19 Camps </option>
+        <option> Private Hospital </option>
+        <option> Goverment Hospital </option>
+    </select>
+  </div>
+
+  <div class="form-group">
+   <label for="desc"> <h4> Any Special Requirements </h4>  </label>
+    <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
+  </div>
+
+
+  <button type="submit" class="btn btn-info" style="margin-top:30px">Submit</button>
+
+</form>
+</div>
+<!-- Ends Section 2 -->
+
+<!-- Section 3 -->
+<section class="check_now_area check_now_box full_widget_check">
+<div class="container">
+<div class="row m-0 justify-content-between">
+<div class="left">
+<div class="media">
+<div class="d-flex">
+<img src="/static/shop/images/check-4.png" alt="">
+<img src="/static/shop/images/check-5.png" alt="">
+<img src="/static/shop/images/check-6.png" alt="">
+</div>
+<div class="media-body">
+<h4>Think you might be affected?</h4>
+<p>
+Try our simple coronavirus checker to find out what you need
+ to do.
+</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+<!-- Ends Section 3 -->
+
+{% endblock %}

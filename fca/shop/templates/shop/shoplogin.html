@@ -8,22 +8,18 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'blog/css/bootstrap.min.css' %}" />
-    <link rel="stylesheet" href="{% static 'blog/css/style.css' %}" />
-    <link rel="stylesheet" href="{% static 'blog/css/responsive.css' %}" />
-    <link rel="stylesheet" href="{% static 'blog/vendors/fontawesome/css/all.css' %}" />
-    <link rel="stylesheet" href="{% static 'blog/vendors/linearicons/css/linearicons.css' %}" />
-    <link rel="stylesheet" href="{% static 'blog/vendors/slick/slick.css' %}" />
-    <link rel="stylesheet" href="{% static 'blog/vendors/slick/slick-theme.css' %}" />
-    <link rel="stylesheet" href="{% static 'blog/vendors/mCustomScrollbar/jquery.mCustomScrollbar.min.css' %}" />
-    <link rel="stylesheet" href="{% static 'blog/vendors/mCustomScrollbar/jquery.mCustomScrollbar.min.css' %}" />
-
-
-    <title> {% block title %}{% endblock %} </title>
-  </head>
+    <link rel="stylesheet" href="{% static 'shop/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'shop/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'shop/css/responsive.css' %}" />
+    <link rel="stylesheet" href="{% static 'shop/vendors/fontawesome/css/all.css' %}" />
+    <link rel="stylesheet" href="{% static 'shop/vendors/linearicons/css/linearicons.css' %}" />
+    <link rel="stylesheet" href="{% static 'shop/vendors/slick/slick.css' %}" />
+    <link rel="stylesheet" href="{% static 'shop/vendors/slick/slick-theme.css' %}" />
+    <link rel="stylesheet" href="{% static 'shop/vendors/mCustomScrollbar/jquery.mCustomScrollbar.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'shop/vendors/mCustomScrollbar/jquery.mCustomScrollbar.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'shop/css/log.css' %}">
+    </head>
   <body>
-
-
 <!-- Nav Bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
@@ -93,9 +89,50 @@
 <!-- Nav Bar Ends -->
 
 
+<!--Login Page-->
+<div style="background-color:powderblue;">
+    <div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    
+    <h2 class="active"><a href=""> Sign In</a> </h2>
+    <h2 class="inactive underlineHover"><a href="{% url 'ShopSignup' %}">Sign Up </a></h2>
 
-    {% block body %}{% endblock %}
+   
 
+    <!-- Login Form -->
+    <form action="" method="post">
+    {% csrf_token %}
+      <input type="text" id="login" class="fadeIn first username" name="uname" placeholder="login">
+      <input type="password" id="password" class="fadeIn second password" name="password" placeholder="password">
+      <h4>{{msg}}</h4>
+      <input type="submit"  class="fadeIn third button" value="Log In">
+    </form>
+
+<script>
+    document.querySelector('.button').onclick=function(){
+      var password=document.querySelector('.password').value,
+      uname=document.querySelector('.username').value;
+      
+      if(password==""  || uname==""){
+        alert("Field cannot be empty")
+        return false
+      }
+      else{
+        return true
+      } 
+      
+    } 
+   </script>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>
+<!--Login-Page-->
 
 
 <!-- Footer -->
@@ -249,7 +286,7 @@ resulting in the 2019–2020 coronavirus pandemic.
 <!--Copyright Footer Start-->
 <div class="footer_copyright">
 <div class="container">
-<img src="blog/images/f-logo.png" alt="">
+<img src="{% static 'shop/images/f-logo.png' %}" alt="">
 <p>© Copyright
 <script>
               document.write(new Date().getFullYear());
@@ -281,20 +318,20 @@ by <span>Sahil | Mihir | Deep</span>
     -->
 
 
-<script src="{% static 'blog/js/jquery-3.4.1.min.js' %}"></script>
-<script src="{% static 'blog/js/popper.min.js' %}"></script>
-<script src="{% static 'blog/js/bootstrap.min.js' %}"></script>
-<script src="{% static 'blog/vendors/corona-live/dashboard.js' %}"></script>
-<script src="{% static 'blog/vendors/isotop/imagesloaded.pkgd.min.js' %}"></script>
-<script src="{% static 'blog/vendors/isotop/isotope.pkgd.min.js' %}"></script>
-<script src="{% static 'blog/vendors/slick/slick.min.js"' %}></script>
-<script src="{% static 'blog/vendors/scroll-animation/jquery.parallax-scroll.js' %}"></script>
-<script src="{% static 'blog/vendors/scroll-animation/parallax.js' %}"></script>
-<script src="{% static 'blog/vendors/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js' %}"></script>
-<script src="{% static 'blog/vendors/animate-css/wow.min.js' %}"></script>
-<script src="{% static 'blog/vendors/animate-css/wow.min.js' %}"></script>
-<script src="{% static 'blog/js/theme.js' %}"></script>
-<script src="{% static 'blog/js/comming-soon.js' %}"></script>
+<script src="{% static 'shop/js/jquery-3.4.1.min.js' %}"></script>
+<script src="{% static 'shop/js/popper.min.js' %}"></script>
+<script src="{% static 'shop/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'shop/vendors/corona-live/dashboard.js' %}"></script>
+<script src="{% static 'shop/vendors/isotop/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'shop/vendors/isotop/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'shop/vendors/slick/slick.min.js' %}"></script>
+<script src="{% static 'shop/vendors/scroll-animation/jquery.parallax-scroll.js' %}"></script>
+<script src="{% static 'shop/vendors/scroll-animation/parallax.js' %}"></script>
+<script src="{% static 'shop/vendors/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+<script src="{% static 'shop/vendors/animate-css/wow.min.js' %}"></script>
+<script src="{% static 'shop/vendors/animate-css/wow.min.js' %}"></script>
+<script src="{% static 'shop/js/theme.js' %}"></script>
+<script src="{% static 'shop/js/comming-soon.js' %}"></script>
 
   </body>
 </html>

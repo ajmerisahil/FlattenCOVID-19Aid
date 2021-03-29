@@ -1,5 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.contrib.auth.models import User,auth
+from django.http import HttpResponseRedirect
+from django.contrib.auth.hashers import make_password 
 from .models import Contact,Appointment
 
 # Create your views here.
@@ -46,14 +49,63 @@ def doctors(request):
 def error(request):
     return render(request , 'shop/error.html')
 
+def logout(request):
+    auth.logout(request)
+    return HttpResponseRedirect('/shoplogin/')
+
 def measures(request):
     return render(request,'shop/measures.html')
 
 def prevention(request):
     return render(request,'shop/prevention.html')
 
+def shoplogin(request):
+    if request.method == "POST":
+        #Get the post Parameters
+        uname=request.POST['uname']
+        passw=request.POST['password']
+
+        user=auth.authenticate(username=uname,password=passw)
+
+        if user is not None:
+            auth.login(request,user)
+            return HttpResponseRedirect("/appointment/")
+        else:
+            msg="Username Or Password Incorrect"
+            return render(request,'shop/shoplogin.html',{"msg":msg})
+    else:
+        if request.user.is_authenticated:
+             return HttpResponseRedirect("/appointment/")
+        else:
+            return render(request,'shop/shoplogin.html')
+
+
+def signup(request):
+    if request.method == "POST":
+        #Get the post Parameters
+        uname=request.POST['uname']
+        email=request.POST['email']
+        pas=request.POST['password']
+        passw=make_password(pas)
+
+        if User.objects.filter(username=uname).exists():
+           msg1="User Name Taken"
+           #return HttpResponseRedirect("/signup/",{"msg":msg}) 
+           return render(request,'shop/signup.html',{"msg1":msg1})
+        elif User.objects.filter(email=email).exists():
+           msg2="Email Taken"  
+           return render(request,'shop/signup.html',{"msg2":msg2})
+        else:
+            user=User.objects.create(username=uname,email=email,password=passw)
+            user.save()
+        return HttpResponseRedirect("/shoplogin/")
+    else:  
+            return render(request,'shop/signup.html')
+
+
 def symptoms(request):
     return render(request,'shop/symptoms.html')
+
 
 def tips(request):
     return render(request,'shop/tips.html')

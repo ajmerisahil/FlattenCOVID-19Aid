@@ -25,6 +25,14 @@ SECRET_KEY = '_j3i_-11_d)dwiymw7e=k)fr=t04ge7(wb85!w6^&jb+c8(-!q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
+EMAIL_HOST="smtp.gmail.com"
+EMAIL_HOST_USER="flattencovidaid@gmail.com"
+EMAIL_HOST_PASSWORD="FlattenAid*1"
+EMAIL_PORT=587
+EMAIL_USE_TLS=True
+EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
+
 ALLOWED_HOSTS = []
 
 
